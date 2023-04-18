@@ -5,6 +5,321 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.42;
+    color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-   }
+}
+
+.wrapper {
+    position: absolute;
+    width: 1920px;
+    height: 2930px;
+    left: 0px;
+    top: 0px;
+    background: #001821;
+    background-image: url(images/bg1.png);
+    background-repeat: no-repeat;
+}
+
+header {
+    position: absolute;
+    width: 1141px;
+    height: 124px;
+    left: 390px;
+    top: 27px;
+}
+
+.logo {
+    position: absolute;
+    width: 85px;
+    height: 36px;
+    left: 0px;
+    top: 2px;
+}
+
+.menu {
+    position: absolute;
+    left: 164px;
+    top: 15px;
+}
+
+.menu__item {
+    display: inline-block;
+    margin: 0px 27px;
+}
+
+a.menu__link{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+a.menu__link:hover {
+    text-decoration: none;
+    font-size: 14px;
+    color: #F5170E;
+}
+
+.contacts {
+    position: absolute;
+    left: 950px;
+    top: 26px;
+    font-style: normal;
+}
+
+.contacts__phone {
+    font-size: 26px;
+}
+
+a.contacts__phone{
+    text-decoration: none;
+    color: #fff;
+}
+
+a.contacts__schedule {
+    text-decoration: none;
+    color: #fff;
+}
+
+.preview {
+    position: absolute;
+    width: 511px;
+    height: 333px;
+    left: 390px;
+    top: 196px;
+}
+
+.preview__title {
+    font-weight: 700;
+    font-size: 72px;
+    margin-top: 0px;
+    margin-bottom: 27px;
+}
+
+.preview__text {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 33px;
+}
+
+.button {
+    color: #F5170E;
+    font-weight: 700;
+    font-size: 14px;
+    background: #fff;
+    border: 1px solid #F5170E;
+    border-radius: 35px;
+    letter-spacing: 1px
+}
+
+.button:hover {
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    background: #F5170E;
+    border-radius: 35px;
+    letter-spacing: 1px
+}
+
+.preview__button > .button {
+    width: 168px;
+    height: 55px;
+}
+
+.hotsale {
+    position: absolute;
+    /* width: 1140px; */
+    height: 549px;
+    left: 389px;
+    top: 775px;
+}
+
+.hotsale__title {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.hotsale__title::after {
+    content: url(images/flame.png);
+}
+
+.hotsale__list {
+    padding: 0px;
+}
+.hotsale__item {
+    display: inline-block;
+    width: 362px;
+    height: 449px;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+    margin-right: 27px;
+} 
+
+.hotsale__content {
+    padding: 22px;
+    /* height: 305px; */
+    background: #FFFFFF;
+    border-radius: 0px 0px 5px 5px;
+    color: #303030;
+    height: 350px;
+    position: relative;
+}
+
+.hotsale__subtitle {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.hotsale__features-list {
+    padding: 0px;
+}
+
+.hotsale__features-item {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.hotsale__features-icon {
+    vertical-align: bottom;
+}
+
+.hotsale__features-text {
+    display: inline;
+}
+
+.hotsale__button > .button {
+    width: 135px;
+    height: 55px;
+    position: absolute;
+    left: 22;
+    bottom: 10px;
+}
+
+.news {
+    position: absolute;
+    width: 1139px;
+    height: 600px;
+    left: 389px;
+    top: 1451px;
+}
+
+.news__title{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.news__list {
+    padding: 0px;
+}
+
+.news__item {
+    display: inline-block;
+    width: 557px;
+    height: 394px;
+    vertical-align: top;
+    position: relative;
+}
+
+.first {
+    background-image: url(images/plain.png);
+    margin-right: 20px;
+}
+
+.second {
+    background-image: url(images/surfer.png);
+}
+
+.news__content {
+    position: absolute;
+    top: 252px;
+    left: 30px;
+}
+
+.news__date {
+    font-size: 14px;
+}
+
+.news__subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.news__info {
+    line-height: 21px;
+}
+
+.paginator {
+    text-align: center;
+}
+
+.paginator__display {
+    display: inline;
+}
+
+.paginator__list {
+    display: inline;
+}
+
+.paginator__item {
+    display: inline;
+    margin: 10px;
+}
+
+a.paginator__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+a.paginator__link:hover {
+    color: #F5170E;
+}
+
+.about {
+    position: absolute;
+    width: 1139px;
+    height: 552px;
+    left: 389px;
+    top: 2175px;
+}
+
+.about__card {
+    background-image: url(images/mountains.png);
+    position: absolute;
+    width: 625px;
+    height: 410px;
+    left: 354px;
+    top: 97px;
+    padding: 45px 81px 0px;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
+}
+
+.about__info {
+    color: #060606;
+    padding-right: 121px;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 1px;
+}
+
+.about__button > .button {
+    width: 168px;
+    height: 55px;
+    position: absolute;
+    left: 81;
+    bottom: 50px;
+}
+
+footer {
+    position: absolute;
+    width: 1142px;
+    height: 92.64px;
+    left: 389px;
+    top: 2780px;
+}
