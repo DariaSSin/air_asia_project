@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
-html {
-    width: 100%;
-    height: 100%;
-}
-
 body {
-    width: 100%;
-    height: 100%;
-    font-family: 'Open Sans', sans-serif;
+    background: #001821;
+    font-family: 'Open Sans', Helvetica, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.42;
@@ -17,26 +11,29 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.wrapper {
-    width: 1920px;
-    height: 2930px;
-    background: #001821;
-    background-image: url(images/bg1.png);
-    background-repeat: no-repeat;
+a {
+    color: inherit;
+}
+
+.main-page-wrapper {
+    background: url(images/bg1.png) center top no-repeat, url(images/bg2.png) center bottom 165px no-repeat;
+}
+
+.container {
+    margin: 0px auto;
+    width: 1140px;
 }
 
 header {
     position: relative;
-    width: 1140px;
     height: 124px;
-    margin-left: 390px;
 }
 
 .logo {
     position: absolute;
     width: 85px;
     height: 36px;
-    left: 0px;
+    /* left: 0px; */
     top: 44px;
 }
 
@@ -87,10 +84,8 @@ a.contacts__schedule {
 }
 
 .preview {
-    margin-left: 390px;
     margin-top: 70px;
     width: 511px;
-    height: 333px;
 }
 
 .preview__title {
@@ -132,7 +127,6 @@ a.contacts__schedule {
 
 .hotsale {
     width: 1200px;
-    margin-left: 390px;
     margin-top: 246px;
 }
 
@@ -148,6 +142,7 @@ a.contacts__schedule {
 .hotsale__list {
     padding: 0px;
 }
+
 .hotsale__item {
     display: inline-block;
     width: 362px;
@@ -155,7 +150,11 @@ a.contacts__schedule {
     padding: 0px;
     vertical-align: top;
     margin-right: 27px;
-} 
+}
+
+.hotsale__item:last-child {
+    margin-right: 0px;
+}
 
 .hotsale__content {
     padding: 22px;
@@ -177,7 +176,11 @@ a.contacts__schedule {
 
 .hotsale__features-item {
     display: inline-block;
-    margin-right: 25px;
+    margin-right: 55px;
+}
+
+.hotsale__features-item:last-child {
+    margin-right: 0px;
 }
 
 .hotsale__features-icon {
@@ -198,7 +201,6 @@ a.contacts__schedule {
 
 .news {
     width: 1200px;
-    margin-left: 390px;
     margin-top: 127px;
 }
 
@@ -215,23 +217,28 @@ a.contacts__schedule {
     display: inline-block;
     width: 557px;
     height: 394px;
+    border-radius: 5px;
     vertical-align: top;
     position: relative;
+    overflow: hidden;
 }
 
-.first {
-    background-image: url(images/plain.png);
-    margin-right: 27px;
+.news__item:first-child {
+    margin-right: 25px;
 }
 
-.second {
-    background-image: url(images/surfer.png);
+.news__cover {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .news__content {
     position: absolute;
-    top: 252px;
+    bottom: 10px;
     left: 30px;
+    min-height: 140px;
 }
 
 .news__date {
@@ -253,40 +260,50 @@ a.contacts__schedule {
     text-align: center;
 }
 
-.paginator__display {
-    display: inline;
+.paginator__display, .paginator__list {
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.paginator__list {
-    display: inline;
+.paginator__display {
+    margin-right: 25px;
 }
 
 .paginator__item {
-    display: inline;
-    margin: 10px;
+    display: inline-block;
 }
 
-a.paginator__link {
+.paginator__link {
+    display: block;
     text-decoration: none;
-    color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 32px;
 }
 
 a.paginator__link:hover {
     color: #F5170E;
+    background-color: #fff;
 }
 
 .about {
     width: 1140px;
     height: 552px;
-    margin-left: 390px;
     margin-top: 127px;
     position: relative;
+}
+
+.about__photo {
+    border-radius: 5px;
 }
 
 .about__card {
     background-image: url(images/mountains.png);
     width: 625px;
     height: 410px;
+    border-radius: 5px;
     padding: 45px 81px 0px;
     position: absolute;
     bottom: 0px;
@@ -315,29 +332,68 @@ a.paginator__link:hover {
     bottom: 50px;
 }
 
+.footer-container {
+    border-top: 4px #444 solid;
+    margin-top: 53px;
+}
+
 footer {
     position: relative;
-    width: 1140px;
-    margin-top: 53px;
-    margin-left: 390px;
-    border: #fff 4px solid;
+    height: 152px;
 }
 
 .socials {
     position: absolute;
-    left: 650px;
-    margin-top: 20px;
-}
-
-.socials__list {
-    padding: 0px;
+    top: 23px;
+    right: 300px;
 }
 
 .socials__item {
-    display: inline;
-    margin: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
-a.socials__link {
+.socials__item:last-child {
+    margin-right: 0;
+}
+
+.socials__link {
+    display: block;
     text-decoration: none;
+    width: 36px;
+    height: 36px;
+    background: center center no-repeat;
+}
+
+.socials__item--telegram .socials__link {
+    background-image: url(images/telegram.png);
+}
+
+.socials__item--telegram .socials__link:hover {
+    background-image: url(images/telegram_hover.png);
+}
+
+.socials__item--vk .socials__link {
+    background-image: url(images/vk.png);
+}
+
+.socials__item--vk .socials__link:hover {
+    background-image: url(images/vk_hover.png);
+}
+
+.socials__item--facebook .socials__link {
+    background-image: url(images/facebook.png);
+}
+
+.socials__item--facebook .socials__link:hover {
+    background-image: url(images/facebook_hover.png);
+}
+
+.socials__item--instagram .socials__link {
+    background-image: url(images/instagram.png);
+}
+
+.socials__item--instagram .socials__link:hover {
+    background-image: url(images/instagram_hover.png);
 }
