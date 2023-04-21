@@ -5,11 +5,6 @@ html, body  {
     width: 100%;
 }
 
-.wrapper {
-    width: 100%;
-    overflow-x: hidden;
-}
-
 body {
     background: #001821;
     font-family: 'Open Sans', Helvetica, sans-serif;
