@@ -149,20 +149,20 @@ a.menu__link:hover {
 }
 
 .hotsale__content {
-    padding: 2px 20px;
+    padding: 20px;
     color: #303030;
-    height: 293px;
+    height: 256px;
     position: relative;
 }
 
 .hotsale__subtitle {
     font-weight: 700;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin: 7px 0px;
 }
 
-.hotsale__features-list {
-    padding: 0px;
+.hotsale__features {
+    margin: 19px 0px;
 }
 
 .hotsale__features-item {
@@ -193,7 +193,7 @@ a.menu__link:hover {
 .hotsale__button {
     position: absolute;
     left: 22px;
-    bottom: 25px;
+    bottom: 24px;
 }
 
 .hotsale__button > .button {
