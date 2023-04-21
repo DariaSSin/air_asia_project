@@ -65,22 +65,14 @@ a.menu__link:hover {
     top: 29px;
     font-style: normal;
     text-align: right;
+    font-size: 13px;
 }
 
 .contacts__phone {
     font-size: 26px;
     display: block;
-}
-
-a.contacts__phone{
-    text-decoration: none;
-    color: #fff;
     line-height: 27px;
-}
-
-a.contacts__schedule {
-    font-style: 13px;
-    line-height: 13px
+    text-decoration: none;
 }
 
 .preview {
@@ -421,4 +413,5 @@ footer {
 .contacts__text {
     font-size: 11px;
     color: #9A9A9A;
+    margin-bottom: 7px;
 }
