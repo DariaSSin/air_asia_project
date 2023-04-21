@@ -39,7 +39,7 @@ header {
 .menu {
     position: absolute;
     left: 96px;
-    top: 24px;
+    top: 25px;
 }
 
 .menu__item {
@@ -176,7 +176,7 @@ a.contacts__schedule {
 .hotsale__features-item {
     display: inline-block;
     margin-left: 6px;
-    margin-right: 24px;
+    margin-right: 19px;
 }
 
 .hotsale__features-item:last-child {
@@ -193,9 +193,14 @@ a.contacts__schedule {
     margin-bottom: 2px;
 }
 
+.hotsale__description {
+    margin-top: 23px;
+    line-height: 1.33;
+}
+
 .hotsale__button {
     position: absolute;
-    left: 22;
+    left: 22px;
     bottom: 25px;
 }
 
@@ -212,6 +217,7 @@ a.contacts__schedule {
 .news__title{
     font-weight: 700;
     font-size: 36px;
+    margin-bottom: 49px;
 }
 
 .news__list {
@@ -229,7 +235,7 @@ a.contacts__schedule {
 }
 
 .news__item:first-child {
-    margin-right: 25px;
+    margin-right: 18px;
 }
 
 .news__cover {
@@ -243,35 +249,40 @@ a.contacts__schedule {
     position: absolute;
     bottom: 10px;
     left: 30px;
-    min-height: 140px;
+    min-height: 127px;
 }
 
 .news__date {
     font-size: 14px;
+    line-height: 14px;
 }
 
 .news__subtitle {
     font-weight: 700;
     font-size: 24px;
-    line-height: 26px;
+    line-height: 24px;
+    margin: 23px 0px 3px;
 }
 
 .news__info {
-    line-height: 21px;
+    line-height: 26px;
 }
 
 .paginator {
-    margin-top: 53px;
+    margin-top: 36px;
     text-align: center;
+    padding-right: 39px;
 }
 
 .paginator__display, .paginator__list {
     display: inline-block;
     vertical-align: middle;
+    margin: 17px 0;
+    padding: 0;
 }
 
 .paginator__display {
-    margin-right: 25px;
+    margin-right: 21px;
 }
 
 .paginator__item {
@@ -319,22 +330,24 @@ a.paginator__link:hover {
     font-weight: 700;
     font-size: 36px;
     color: #000000;
+    margin: 26px 0px 37px;
 }
 
 .about__info {
     color: #060606;
-    padding-right: 121px;
+    padding-right: 120px;
     font-size: 16px;
     line-height: 27px;
-    letter-spacing: 1px;
+}
+
+.about__button {
+    position: absolute;
+    bottom: 63px;
 }
 
 .about__button > .button {
     width: 168px;
     height: 55px;
-    position: absolute;
-    left: 81;
-    bottom: 50px;
 }
 
 .footer-container {
@@ -345,18 +358,20 @@ a.paginator__link:hover {
 footer {
     position: relative;
     height: 152px;
+    margin-top: 18px;
 }
 
 .socials {
     position: absolute;
-    top: 23px;
-    right: 300px;
+    top: 17px;
+    right: 264px;
+    padding: 0;
 }
 
 .socials__item {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 6px;
 }
 
 .socials__item:last-child {
@@ -401,4 +416,9 @@ footer {
 
 .socials__item--instagram .socials__link:hover {
     background-image: url(images/instagram_hover.png);
+}
+
+.contacts__text {
+    font-size: 11px;
+    color: #9A9A9A;
 }
