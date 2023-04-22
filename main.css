@@ -1,15 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
-/* html, body  {
+* {
+    box-sizing: border-box;
+}
+
+html, body  {
     height: 100%;
     width: 100%;
-} */
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    /* height: 100%; */
+    width: 100%;
+    overflow-x: hidden;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+button {
+    background: transparent;
+    padding: 0;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+}
 
 body {
     background: #001821;
     font-family: 'Open Sans', Helvetica, sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.42;
     color: #fff;
     -webkit-font-smoothing: antialiased;
@@ -18,6 +49,7 @@ body {
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 .main-page-wrapper {
@@ -25,42 +57,37 @@ a {
 }
 
 .container {
-    margin: 0px auto;
+    margin: 0 auto;
     width: 1140px;
 }
 
 header {
     position: relative;
-    height: 124px;
+    min-height: 124px;
+    margin-bottom: 70px;
 }
 
 .logo {
     position: absolute;
-    width: 85px;
-    height: 36px;
     top: 29px;
 }
 
 .menu {
     position: absolute;
-    left: 96px;
-    top: 25px;
+    left: 164px;
+    top: 37px;
 }
 
 .menu__item {
     display: inline-block;
-    margin: 0px 26px;
+    margin-right: 54px;
 }
 
-a.menu__link{
-    text-decoration: none;
-    font-size: 14px;
-    color: #fff;
+.menu__item:last-child {
+    margin-right: 0;
 }
 
 a.menu__link:hover {
-    text-decoration: none;
-    font-size: 14px;
     color: #F5170E;
 }
 
@@ -77,52 +104,46 @@ a.menu__link:hover {
     font-size: 26px;
     display: block;
     line-height: 27px;
-    text-decoration: none;
 }
 
 .preview {
-    margin-top: 70px;
     width: 511px;
+    margin-bottom: 246px;
 }
 
 .preview__title {
     font-weight: 700;
     font-size: 72px;
-    margin-top: 0px;
     margin-bottom: 23px;
 }
 
 .preview__text {
     font-size: 18px;
-    line-height: 20px;
     margin-bottom: 33px;
 }
 
 .button {
     color: #F5170E;
-    font-weight: 700;
-    font-size: 14px;
     background: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
     border: 1px solid #F5170E;
     border-radius: 35px;
+    padding: 0 10px;
+    min-height: 55px;
 }
 
 .button:hover {
     color: #fff;
-    font-weight: 700;
-    font-size: 14px;
     background: #F5170E;
-    border-radius: 35px;
 }
 
 .preview__button > .button {
-    width: 168px;
-    height: 55px;
+    min-width: 168px;
 }
 
 .hotsale {
-    width: 1200px;
-    margin-top: 246px;
+    margin-bottom: 127px;
 }
 
 .hotsale__title {
@@ -135,45 +156,43 @@ a.menu__link:hover {
     content: url(images/flame.png);
 }
 
-.hotsale__list {
-    padding: 0px;
-}
-
 .hotsale__item {
     display: inline-block;
     width: 362px;
-    margin: 0px 23px 0px 0px;
-    padding: 0px;
-    vertical-align: top;
     background: #FFFFFF;
     border-radius: 5px;
+    vertical-align: top;
+    margin-right: 23px;
 }
 
 .hotsale__item:last-child {
     margin-right: 0px;
 }
 
+.hotsale__image {
+    margin-bottom: 7px;
+}
+
 .hotsale__content {
     padding: 20px;
     color: #303030;
-    height: 256px;
-    position: relative;
+    min-height: 270px;
 }
 
 .hotsale__subtitle {
     font-weight: 700;
     font-size: 24px;
-    margin: 7px 0px;
+    margin-bottom: 19px;
 }
 
 .hotsale__features {
-    margin: 19px 0px;
+    padding-left: 6px;
+    margin-bottom: 23px;
 }
 
 .hotsale__features-item {
     display: inline-block;
-    margin-left: 6px;
-    margin-right: 19px;
+    margin-right: 25px;
 }
 
 .hotsale__features-item:last-child {
@@ -191,24 +210,17 @@ a.menu__link:hover {
 }
 
 .hotsale__description {
-    margin-top: 23px;
     line-height: 1.33;
-}
-
-.hotsale__button {
-    position: absolute;
-    left: 22px;
-    bottom: 24px;
+    min-height: 70px;
+    margin-bottom: 15px;
 }
 
 .hotsale__button > .button {
-    width: 135px;
-    height: 55px;
+    min-width: 135px;
 }
 
 .news {
-    width: 1200px;
-    margin-top: 127px;
+    margin-bottom: 127px;
 }
 
 .news__title{
@@ -218,21 +230,22 @@ a.menu__link:hover {
 }
 
 .news__list {
-    padding: 0px;
+    margin-bottom: 36px;
 }
 
 .news__item {
     display: inline-block;
     width: 557px;
-    height: 394px;
+    min-height: 394px;
     border-radius: 5px;
     vertical-align: top;
-    position: relative;
     overflow: hidden;
+    position: relative;
+    margin-right: 18px;
 }
 
-.news__item:first-child {
-    margin-right: 18px;
+.news__item:last-child {
+    margin-right: 0;
 }
 
 .news__cover {
@@ -245,41 +258,36 @@ a.menu__link:hover {
 .news__content {
     position: absolute;
     bottom: 10px;
-    left: 30px;
+    padding: 0 30px;
     min-height: 127px;
 }
 
 .news__date {
-    font-size: 14px;
-    line-height: 14px;
+    margin-bottom: 0px;
 }
 
 .news__subtitle {
     font-weight: 700;
     font-size: 24px;
-    line-height: 24px;
-    margin: 23px 0px 3px;
+    margin-bottom: 0px;
 }
 
 .news__info {
-    line-height: 26px;
+    font-size: 16px;
 }
 
 .paginator {
-    margin-top: 36px;
     text-align: center;
     padding-right: 39px;
 }
 
-.paginator__display, .paginator__list {
+.paginator__display  {
     display: inline-block;
-    vertical-align: middle;
-    margin: 17px 0;
-    padding: 0;
+    margin-right: 21px;
 }
 
-.paginator__display {
-    margin-right: 21px;
+.paginator__list {
+    display: inline-block;
 }
 
 .paginator__item {
@@ -294,40 +302,41 @@ a.menu__link:hover {
     border-radius: 50%;
     font-weight: bold;
     line-height: 32px;
+    background: transparent;
 }
 
 a.paginator__link:hover {
     color: #F5170E;
     background-color: #fff;
+    transition: background 0.4s;
 }
 
 .about {
-    width: 1140px;
-    height: 552px;
-    margin-top: 127px;
-    position: relative;
+    margin-bottom: 53px;
 }
 
 .about__photo {
+    display: inline-block;
     border-radius: 5px;
 }
 
 .about__card {
+    display: inline-block;
+    vertical-align: top;
     background-image: url(images/mountains.png);
-    width: 625px;
-    height: 410px;
+    width: 761px;
+    min-height: 455px;
     border-radius: 5px;
-    padding: 45px 81px 0px;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+    padding: 45px 81px;
+    margin-top: 97px;
+    margin-left: -136px;
 }
 
 .about__title {
     font-weight: 700;
     font-size: 36px;
     color: #000000;
-    margin: 26px 0px 37px;
+    margin-bottom: 10px;
 }
 
 .about__info {
@@ -335,34 +344,36 @@ a.paginator__link:hover {
     padding-right: 120px;
     font-size: 16px;
     line-height: 27px;
-}
-
-.about__button {
-    position: absolute;
-    bottom: 63px;
+    min-height: 230px;
+    margin-bottom: 10px;
 }
 
 .about__button > .button {
-    width: 168px;
-    height: 55px;
-}
-
-.footer-container {
-    border-top: 4px #444 solid;
-    margin-top: 53px;
+    min-width: 168px;
+    min-height: 55px;
 }
 
 footer {
     position: relative;
     height: 152px;
-    margin-top: 18px;
+}
+
+.footer--mainPage {
+    border-top: 4px #444 solid;
+}
+
+.logo--footer {
+    top: 49px;
+}
+
+.menu--footer {
+    top: 57px;
 }
 
 .socials {
     position: absolute;
-    top: 17px;
-    right: 264px;
-    padding: 0;
+    top: 55px;
+    right: 250px;
 }
 
 .socials__item {
@@ -413,6 +424,10 @@ footer {
 
 .socials__item--instagram .socials__link:hover {
     background-image: url(images/instagram_hover.png);
+}
+
+.contacts--footer {
+    top: 45px;
 }
 
 .contacts__text {
