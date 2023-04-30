@@ -5,36 +5,40 @@
         <title>Air Asia</title>
         <link rel="stylesheet" href="main.css">
     </head>
-    <body>
-        <div class="wrapper main-page-wrapper">
+    <body id="main-page">
+        <div class="wrapper wrapper--main-page">
             <div class="container">
                 <header class="header">
-                    <div class="logo">
-                        <a href="#" class="logo__link">
-                            <img src="images/logo.png" alt="Логотип" class="logo__img">
-                        </a>
+                    <div class="header__col">
+                        <div class="logo">
+                            <a href="#" class="logo__link">
+                                <img src="images/logo.png" alt="Логотип" class="logo__img">
+                            </a>
+                        </div>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Главная</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Услуги</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Отзывы</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Главная</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Услуги</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Отзывы</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <address class="contacts">
-                        <a href="tel:+78007003030" class="contacts__phone">
-                            8 800 700 30 30
-                        </a>
-                        <a href="#" class="contacts__schedule">
-                            График работы
-                        </a>
-                    </address>
+                    <div class="header__col header__col--align--right">
+                        <address class="contacts">
+                            <a href="tel:+78007003030" class="contacts__phone">
+                                8 800 700 30 30
+                            </a>
+                            <a href="#" class="contacts__schedule">
+                                График работы
+                            </a>
+                        </address>
+                    </div>
                 </header>
                 <main class="main">
                     <div class="preview">
@@ -144,8 +148,7 @@
                             Новости и акции
                         </h2>
                         <ul class="news__list">
-                            <li class="news__item">
-                                <img src="images/plain.png" alt="Самолет" class="news__cover">
+                            <li class="news__item news__item--plain">
                                 <div class="news__content">
                                     <div class="news__date">
                                         <span class="news__date-month">Декабрь</span>
@@ -159,8 +162,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="news__item">
-                                <img src="images/surfer.png" alt="Серфер" class="news__cover">
+                            <li class="news__item news__item--surfer">
                                 <div class="news__content">
                                     <div class="news__date">
                                         <span class="news__date-month">Декабрь</span>
@@ -220,47 +222,51 @@
                         </div>
                     </div>
                 </main>
-                <footer class="footer footer--mainPage">
-                    <div class="logo logo--footer">
-                        <a href="#" class="logo__link">
-                            <img src="images/logo.png" alt="Логотип" class="logo__img">
-                        </a>
+                <footer class="footer footer--main-page">
+                    <div class="footer__col">
+                        <div class="logo">
+                            <a href="#" class="logo__link">
+                                <img src="images/logo.png" alt="Логотип" class="logo__img">
+                            </a>
+                        </div>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Главная</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Услуги</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Отзывы</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <nav class="menu menu--footer">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Главная</a>
+                    <div class="footer__col footer__col--align--right">
+                        <ul class="socials">
+                            <li class="socials__item socials__item--telegram">
+                                <a href="#" class="socials__link"></a>
                             </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Услуги</a>
+                            <li class="socials__item socials__item--vk">
+                                <a href="#" class="socials__link"></a>
                             </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Отзывы</a>
+                            <li class="socials__item socials__item--facebook">
+                                <a href="#" class="socials__link"></a>
+                            </li>
+                            <li class="socials__item socials__item--instagram">
+                                <a href="#" class="socials__link"></a>
                             </li>
                         </ul>
-                    </nav>
-                    <ul class="socials">
-                        <li class="socials__item socials__item--telegram">
-                            <a href="#" class="socials__link"></a>
-                        </li>
-                        <li class="socials__item socials__item--vk">
-                            <a href="#" class="socials__link"></a>
-                        </li>
-                        <li class="socials__item socials__item--facebook">
-                            <a href="#" class="socials__link"></a>
-                        </li>
-                        <li class="socials__item socials__item--instagram">
-                            <a href="#" class="socials__link"></a>
-                        </li>
-                    </ul>
-                    <address class="contacts contacts--footer">
-                        <div class="contacts__text">
-                            Бесплатный звонок по России
-                        </div>
-                        <a href="tel:+78007003030" class="contacts__phone">
-                            8 800 700 30 30
-                        </a>
-                    </address>
+                        <address class="contacts">
+                            <div class="contacts__text">
+                                Бесплатный звонок по России
+                            </div>
+                            <a href="tel:+78007003030" class="contacts__phone">
+                                8 800 700 30 30
+                            </a>
+                        </address>
+                    </div>
                 </footer>
             </div>
         </div>
