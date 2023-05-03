@@ -59,6 +59,13 @@ a {
     background: url(images/bg1.png) center top no-repeat, url(images/bg2.png) center bottom 188px no-repeat;
 }
 
+.wrapper--welcome {
+    background: url(images/welcoom-bg.png) center center no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     margin: 0 auto;
     width: 1140px;
@@ -199,6 +206,7 @@ a.menu__link:hover {
 
 .hotsale__title::after {
     content: url(images/flame.png);
+    margin-left: 5px;
 }
 
 .hotsale__list {
@@ -414,11 +422,15 @@ a.menu__link:hover {
 
 .footer--main-page {
     border-top: 4px #444 solid;
-    height: 113px;
-    padding-top: 26px;
+    height: 140px;
+    padding-top: 15px;
 }
 
 .footer--services {
+    height: 150px;
+}
+
+.footer--review {
     height: 150px;
 }
 
@@ -590,3 +602,128 @@ a.menu__link:hover {
     filter: grayscale(100%);
 }
 
+.review {
+    color: #000;
+    margin-bottom: 65px;
+}
+
+.review__list {
+    column-count: 2;
+    margin-bottom: 71px;
+}
+
+.review__item {
+    display: inline-block;
+    background: #F4F5F5;
+    border-radius: 5px;
+    padding: 50px 28px 32px;
+}
+
+.review__item:nth-child(2n+1) {
+    margin-bottom: 17px;
+}
+
+.review__person {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.review__person-foto {
+    margin-right: 24px;
+    width: 142px;
+    height: 142px;
+}
+
+.review__person-name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 42px;
+    margin-bottom: 3px;
+}
+
+.review__person-name:hover {
+    text-decoration-line: underline;
+    color: #2E77A4;
+}
+
+.review__person-name::after {
+    content: url(images/vk-blue.png);
+    margin-left: 5px;
+    vertical-align: text-top;
+}
+
+.review__person-trip {
+    background: #B9EAE4;
+    border-radius: 35px;
+    font-size: 13px;
+    color: #303030;
+    width: fit-content;
+    padding: 0px 18px;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.review__content {
+    padding: 0px 3px;
+}
+.review__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    padding-left: 3px;
+    margin-bottom: 18px;
+}
+
+.review__text {
+    margin-bottom: 34px;
+    font-size: 16px;
+    color: #818181;
+}
+
+.review__date {
+    font-weight: 700;
+    color: #1A1B1E;
+}
+.advert {
+    background: url(images/advert.png) center center no-repeat;
+    height: 363px;
+    display: flex;
+    align-items: center;
+}
+
+.advert__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    width: 594px;
+}
+
+.form {
+    height: 800px;
+    background-color: #F4F5F5;
+    color: #1A1B1E;
+    padding: 62px 0;
+}
+
+.form__title {
+    color: #1A1B1E;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome__text {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 52px;
+}
+
+.welcome__button > .button {
+    min-width: 168px;
+}
