@@ -12,14 +12,14 @@
                 <header class="header header--wide-header">
                     <div class="header__col">
                         <div class="logo">
-                            <a href="welcome.html" class="logo__link">
+                            <a href="index.html" class="logo__link">
                                 <img src="images/logo.png" alt="Логотип" class="logo__img">
                             </a>
                         </div>
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="index.html" class="menu__link">Главная</a>
+                                    <a href="main.html" class="menu__link">Главная</a>
                                 </li>
                                 <li class="menu__item">
                                     <a href="services.html" class="menu__link">Услуги</a>
@@ -35,9 +35,19 @@
                             <a href="tel:+78007003030" class="contacts__phone">
                                 8 800 700 30 30
                             </a>
-                            <a href="#" class="contacts__schedule">
-                                График работы
-                            </a>
+                            <div class="contacts__schedule">
+                                <a href="#" class="contacts__schedule-text">
+                                    График работы
+                                </a>
+                                <div class="contacts__dropdown">
+                                    <p class="contacts__dropdown-days">
+                                        пн-вс: 09:00 - 20:00
+                                    </p>
+                                    <p class="contacts__dropdown-dinner">
+                                        Обед: 14:00-14:30
+                                    </p>
+                                </div>
+                            </div>
                         </address>
                     </div>
                 </header>
@@ -45,7 +55,7 @@
                 <nav class="breadcrumbs">
                     <ul class="breadcrumbs__list">
                         <li class="breadcrumbs__item">
-                            <a href="index.html" class="breadcrumbs__link">
+                            <a href="main.html" class="breadcrumbs__link">
                                 Главная
                             </a>
                         </li>
@@ -58,21 +68,23 @@
                 </nav>
             </div>
         </div>    
-        <div class="review">
+        <main class="review">
             <div class="container">
                 <ul class="review__list">
                     <li class="review__item">
-                        <div class="review__person">
-                            <div class="review__person-foto">
-                                <img src="images/person1.png" alt="Фото">
+                        <div class="review__header">
+                            <div class="review__photo">
+                                <div class="avatar">
+                                    <img src="images/person1.png" alt="Фото" class="avatar__image">
+                                </div>
                             </div>
-                            <div class="review__person-block">
-                                <h3 class="review__person-name">
-                                    <a href="#" class="review__person-link">
+                            <div class="review__userdata">
+                                <h3 class="review__username">
+                                    <a href="#" class="review__userlink">
                                         Иван Петрович
                                     </a>
                                 </h3>
-                                <div class="review__person-trip">
+                                <div class="review__tag tag">
                                     Водопад Янг-бей
                                 </div>
                             </div>
@@ -84,23 +96,25 @@
                             <div class="review__text">
                                 Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
                             </div>
-                            <div class="review__date">
+                            <time class="review__date">
                                 Ноябрь 2019
-                            </div>
+                            </time>
                         </div>
                     </li>
                     <li class="review__item">
-                        <div class="review__person">
-                            <div class="review__person-foto">
-                                <img src="images/person2.png" alt="Фото">
+                        <div class="review__header">
+                            <div class="review__photo">
+                                <div class="avatar">
+                                    <img src="images/person2.png" alt="Фото" class="avatar__image">
+                                </div>
                             </div>
-                            <div class="review__person-block">
-                                <h3 class="review__person-name">
-                                    <a href="#" class="review__person-link">
+                            <div class="review__userdata">
+                                <h3 class="review__username">
+                                    <a href="#" class="review__userlink">
                                         Лиза Сидорова
                                     </a>
                                 </h3>
-                                <div class="review__person-trip">
+                                <div class="review__tag tag">
                                     Тур по Тайланду
                                 </div>
                             </div>
@@ -112,23 +126,25 @@
                             <div class="review__text">
                                 Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
                             </div>
-                            <div class="review__date">
+                            <time class="review__date">
                                 Ноябрь 2019
-                            </div>
+                            </time>
                         </div>
                     </li>
                     <li class="review__item">
-                        <div class="review__person">
-                            <div class="review__person-foto">
-                                <img src="images/person3.png" alt="Фото">
+                        <div class="review__header">
+                            <div class="review__photo">
+                                <div class="avatar">
+                                    <img src="images/person3.png" alt="Фото" class="avatar__image">
+                                </div>
                             </div>
-                            <div class="review__person-block">
-                                <h3 class="review__person-name">
-                                    <a href="#" class="review__person-link">
+                            <div class="review__userdata">
+                                <h3 class="review__username">
+                                    <a href="#" class="review__userlink">
                                         Екатерина Жмых
                                     </a>
                                 </h3>
-                                <div class="review__person-trip">
+                                <div class="review__tag tag">
                                     Тур на Остров обезьян
                                 </div>
                             </div>
@@ -140,23 +156,25 @@
                             <div class="review__text">
                                 Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
                             </div>
-                            <div class="review__date">
+                            <time class="review__date">
                                 Ноябрь 2019
-                            </div>
+                            </time>
                         </div>
                     </li>
                     <li class="review__item">
-                        <div class="review__person">
-                            <div class="review__person-foto">
-                                <img src="images/person4.png" alt="Фото">
+                        <div class="review__header">
+                            <div class="review__photo">
+                                <div class="avatar">
+                                    <img src="images/person4.png" alt="Фото" class="avatar__image">
+                                </div>
                             </div>
-                            <div class="review__person-block">
-                                <h3 class="review__person-name">
-                                    <a href="#" class="review__person-link">
+                            <div class="review__userdata">
+                                <h3 class="review__username">
+                                    <a href="#" class="review__userlink">
                                         Антон Игоревич
                                     </a>
                                 </h3>
-                                <div class="review__person-trip">
+                                <div class="review__tag tag">
                                     Тур по Индонезии
                                 </div>
                             </div>
@@ -168,13 +186,13 @@
                             <div class="review__text">
                                 Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
                             </div>
-                            <div class="review__date">
+                            <time class="review__date">
                                 Ноябрь 2019
-                            </div>
+                            </time>
                         </div>
                     </li>
                 </ul>
-                <div class="paginator">
+                <div class="paginator paginator--review">
                     <div class="paginator__display">
                         Страница <span class="paginator__display-current">1</span>
                         из <span class="paginator__display-all">7</span>
@@ -204,7 +222,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </main>
         <div class="advert">
             <div class="container">
                 <h2 class="advert__title">
@@ -218,7 +236,80 @@
                     Оставьте отзыв
                 </h2>
                 <div class="form__fill">
-
+                    <div class="form__row">
+                        <input type="text" class="form__input" placeholder="Введите ваше ФИО">
+                        <input type="text" class="form__input" placeholder="Ссылка на профиль VK">
+                    </div>
+                    <div class="form__row">
+                        <textarea class="form__input form__input--textarea" placeholder="Напишите свой честный отзыв ;)"></textarea>
+                    </div>
+                    <div class="form__controls">
+                        <div class="form__controls--title">
+                            Какими услугами компании пользуетесь?
+                        </div>
+                        <ul class="form__controls--list">
+                            <li class="form__controls--item">
+                                <label class="controls__elem">
+                                    <input type="checkbox" class="controls__checkbox">
+                                    <div class="controls__tag tag">
+                                        Остров обезьян
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="form__controls--item">
+                                <label class="controls__elem">
+                                    <input type="checkbox" class="controls__checkbox">
+                                    <div class="controls__tag tag">
+                                        Тур по Тайланду
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="form__controls--item">
+                                <label class="controls__elem">
+                                    <input type="checkbox" class="controls__checkbox">
+                                    <div class="controls__tag tag">
+                                        Водопад Янг-бей
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="form__controls--item">
+                                <label class="controls__elem">
+                                    <input type="checkbox" class="controls__checkbox">
+                                    <div class="controls__tag tag">
+                                        Тур по Индонезии
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="form__controls--item">
+                                <label class="controls__elem">
+                                    <input type="checkbox" class="controls__checkbox">
+                                    <div class="controls__tag tag">
+                                        Никакими
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="form__controls--item">
+                                <label class="controls__elem">
+                                    <input type="checkbox" class="controls__checkbox">
+                                    <div class="controls__tag tag">
+                                        Тур по Бали
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="form__controls--item">
+                                <label class="controls__elem">
+                                    <input type="checkbox" class="controls__checkbox">
+                                    <div class="controls__tag tag">
+                                        Другое
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form__button">
+                        <button type="reset" class="button button--reset">Очистить</button>
+                        <button type="submit" class="button button--submit">Отправить</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -226,14 +317,14 @@
             <div class="container container--footer">
                 <div class="footer__col">
                     <div class="logo">
-                        <a href="welcome.html" class="logo__link">
+                        <a href="index.html" class="logo__link">
                             <img src="images/logo.png" alt="Логотип" class="logo__img">
                         </a>
                     </div>
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="index.html" class="menu__link">Главная</a>
+                                <a href="main.html" class="menu__link">Главная</a>
                             </li>
                             <li class="menu__item">
                                 <a href="services.html" class="menu__link">Услуги</a>
