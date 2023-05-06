@@ -59,13 +59,6 @@ a {
     background: url(images/bg1.png) center top no-repeat, url(images/bg2.png) center bottom 188px no-repeat;
 }
 
-.wrapper--welcome {
-    background: url(images/welcome-bg.png) center center no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .container {
     margin: 0 auto;
     width: 1140px;
@@ -657,13 +650,13 @@ a.menu__link:hover {
 
 .review {
     color: #000;
-    margin-bottom: 65px;
+    margin-bottom: 88px;
 }
 
 .review__list {
     column-count: 2;
-    column-gap: 30px;
-    margin-bottom: -17px;
+    column-gap: 26px;
+    margin-bottom: -22px;
 }
 
 .review__item {
@@ -671,17 +664,17 @@ a.menu__link:hover {
     background: #F4F5F5;
     border-radius: 5px;
     padding: 50px 28px 32px;
-    margin-bottom: 17px;
+    margin-bottom: 22px;
 }
 
 .review__header {
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
 }
 
 .review__photo {
-    margin-right: 24px;
+    margin-right: 21px;
 }
 
 .avatar {
@@ -702,7 +695,7 @@ a.menu__link:hover {
     font-weight: 700;
     font-size: 24px;
     line-height: 42px;
-    margin-bottom: 3px;
+    /* margin-bottom: 3px; */
 }
 
 .review__username:hover {
@@ -712,7 +705,7 @@ a.menu__link:hover {
 
 .review__username::after {
     content: url(images/vk-blue.png);
-    margin-left: 5px;
+    margin-left: 3px;
     vertical-align: text-top;
 }
 
@@ -738,12 +731,13 @@ a.menu__link:hover {
     font-weight: 700;
     font-size: 30px;
     padding-left: 3px;
-    margin-bottom: 18px;
+    margin-bottom: 12px;
 }
 
 .review__text {
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     font-size: 16px;
+    line-height: 27px;
     color: #818181;
 }
 
@@ -753,7 +747,7 @@ a.menu__link:hover {
 }
 
 .paginator--review {
-    margin-top: 71px;
+    margin-top: 72px;
 }
 
 .advert {
@@ -774,13 +768,13 @@ a.menu__link:hover {
 .form {
     background-color: #F4F5F5;
     color: #1A1B1E;
-    padding: 62px 0px 96px;
+    padding: 60px 0px 93px;
 }
 
 .form__title {
     font-weight: 700;
     font-size: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 63px;
 }
 
 .form__fill {
@@ -789,7 +783,7 @@ a.menu__link:hover {
 
 .form__row {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 37px;
 }
 
 .form__input {
@@ -819,17 +813,17 @@ a.menu__link:hover {
 }
 
 .form__input--textarea {
-    height: 232px;
+    height: 211px;
 }
 
 .form__controls {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 21px;
 }
 
 .form__controls--title {
-    width: 40%;
-    padding-left: 30px;
+    width: 38%;
+    padding-top: 11px;
     font-size: 18px;
     color: #1A1B1E;
 }
@@ -842,7 +836,7 @@ a.menu__link:hover {
 
 .form__controls--item {
     margin-bottom: 10px;
-    margin-right: 28px;
+    margin-right: 6px;
 }
 
 .controls__elem {
@@ -883,27 +877,32 @@ a.menu__link:hover {
 
 .welcome {
     display: flex;
-    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     align-items: center;
+    justify-content: center;
+    background: url(images/welcome-bg.png) center center no-repeat;
 }
 
-.welcome__main {
+.welcome__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding-top: 32px;
     width: 591px;
     height: 248px;
     background: url(images/shades.png);
     opacity: 0;
     animation: zoom .9s ease-in forwards;
+    padding-top: 56px;
 }
 
-.welcome__text {
+.welcome__description {
     font-size: 18px;
     line-height: 25px;
-    margin-bottom: 52px;
+    margin-bottom: 55px;
 }
 
 .welcome__button > .button {
